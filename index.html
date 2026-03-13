@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Duct Surface Masure</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Duct Surface Masure</h1>
+
+<div class="card">
+
+<label>Diameter (mm)</label>
+<input id="diameter" type="number" value="300">
+
+<label>Height (mm)</label>
+<input id="height" type="number" value="400">
+
+<label>Width (mm)</label>
+<input id="width" type="number" value="250">
+
+<label>Length (mm)</label>
+<input id="length" type="number" value="500">
+
+<label>Divisions</label>
+<input id="divisions" type="number" value="5">
+
+<button onclick="calculate()">Calculate</button>
+
+</div>
+
+<div class="result">
+
+<p>Arc Division: <span id="arc"></span></p>
+<p>Chord Division: <span id="chord"></span></p>
+<p>Surface Area: <span id="area"></span></p>
+
+</div>
+
+<canvas id="patternCanvas"></canvas>
+
+<button onclick="downloadDXF()">Download DXF</button>
+
+</div>
+
+<script src="script.js"></script>
+<script src="dxf.js"></script>
+
+</body>
+
+</html>
+
